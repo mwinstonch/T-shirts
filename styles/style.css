@@ -1,0 +1,184 @@
+* {box-sizing: border-box;}
+
+body {
+	margin: 0 auto;
+	font-size: 0;
+	/* height: 2000px; */
+}
+.front-pics .back-pics {
+	padding-bottom: 25%;
+}
+.major-section {
+	width: 27.7%;
+	border: 3px solid #60A3DB;
+	color: #fff;
+	display: inline-block;
+	vertical-align: top;
+	/* height: 63vh; */
+	position: relative;
+	/* margin-top: 20%; */
+	padding-top: 31%;
+	margin-bottom: 50px;
+}
+
+.flip-switch {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	appearance: none;
+	display: hidden;
+}
+
+.front-pics {
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.back-pics {
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	
+}
+
+input[type="checkbox"]:checked ~ .flip-pics {
+  	transform: rotateY(180deg);
+  	
+}
+
+.flip-pics {
+	transition: 2s transform ease;
+ 	transform-style: preserve-3d;
+}
+
+.lower-class {
+	position: absolute;
+	bottom:0px;
+	border-top: 3px solid #60A3DB;
+	color: #B3B3B4;
+	width: 100%;
+	height: 55px;
+	text-align: left;
+}
+.small-box {
+	border-right: 2px solid #63A2E0;
+	width: 20%;
+	display: inline-block;
+	height: 100%;
+	text-align: center;
+	vertical-align: top;
+	/*	padding-top: 14px;*/
+	line-height: 77px;
+}
+
+h1 {
+	color: #5177C0;	
+
+}
+
+.material-icons {
+	margin: 0 auto;
+	padding: 0;
+	color: #4DA2DF;
+}
+.size-box {
+	position: relative;
+	padding-bottom: 16px;
+	line-height: 71px;
+	opacity: 1;
+	transition: .5sec all ease;
+}
+
+.size-box:hover {
+	color: white;
+	background: #4DA2DF;
+}
+
+.size-box:hover > .sizes-select {
+	bottom: 100%;
+
+}
+
+/*.color {
+	width: 15px;
+	height: 15px;
+}*/
+
+.flip-image {
+	margin: 0 auto;
+	/* height: 210px; */
+	display:  block;
+	/* position: relative; */
+}
+
+.flip-image img {
+	position: absolute;
+	left: 9%;
+	max-width: 78%;
+	transform: translateY(-125%);
+	/* max-height: 18%; */
+}
+
+.color-box {
+	width: 40%;
+	height: 45%;
+	background: #76BAED;
+	display: inline-block;
+	margin-bottom: 6px;
+}
+
+.no-right {
+	border-right: 0px;
+}
+
+img	{
+	max-width: 100%;
+}
+
+.left {
+	margin-right: 4%;
+}
+
+.right {
+	margin-left: 45px;
+}
+
+.align-children {
+	font-size: 0;
+}
+
+.center {
+	text-align: center;
+	height: 50%;
+}
+
+.square {
+	font-size: 20px;
+}
+/*.align-children > * {
+	display: inline-block;
+	vertical-align: top;
+	font-size: medium;
+}*/
+@media (max-width: 800px) {
+	.major-section {
+		margin: auto;
+		width: 40%;
+		padding-top: 44%;
+	}
+	.sm1 .sm3 .sm5 {
+	
+	}
+	.sm1 .sm3 .sm5 {
+
+	}
+}
+
+
+@media (max-width: 520px) {
+	.major-section {
+		display: block;
+		margin: 0 auto;
+		width: 60%;
+		padding-top: 64%;
+	}
+}
